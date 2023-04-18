@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.span {
+    display: none;
+}
+
+.span2 {
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    padding: 12px 0px 10px 0px;
+    z-index: 1;
+    position: fixed;
+    width: 1530px;
+    backdrop-filter: blur(10px);
+}
+
+.sessoes {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-right: 30px;
+    align-items: center;
+    position: sticky;
+    font-size: 18px;
+}
+
+.pagInicio {
+    background: linear-gradient(63.13deg, #8E5D52 51.04%, #512515 51.05%);
+    box-sizing: border-box;
+    padding: 250px 0px 300px 0px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.linkedinBotao {
+    width: 100%;
+    height: 70px;
+    border-radius: 25px;
+    border: none;
+    background-color: #9f654f;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 15px;
+    color: white;
+
+}
+
+#inputMudaIdioma {
+    box-sizing: border-box;
+    margin-left: 20px;
+    cursor: pointer;
+    appearance: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 20%;
+    background-image: url('inputMudaIdioma.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.apresentacao {
+    margin: 0px;
+}
+
+h1.apresentacao {
+    font-size: 50px;
+
+}
+
+h3.apresentacao {
+    font-size: 30px;
+
+}
+
+.sobreMim {
+    display: flex;
+    justify-content: space-around;
+    background-color: #9f654f;
+}
+
+.txtSobreMim {
+    width: 600px;
+    font-size: 19px;
+    box-sizing: border-box;
+    padding: 220px 0px 200px 180px;
+}
+
+.habilidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 220px 0px 280px 180px;
+    background-color: #6c321c;
+}
+
+.containerBasicoHabilidade,
+.containerGITHabilidade {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.habilidadeTXT {
+    display: inline-block;
+    width: 300px;
+}
+
+h1.habilidades {
+    margin-bottom: 50px;
+}
+
+.pHTML,
+.pCSS,
+.pJS,
+.pGit,
+.pGitHub {
+    display: none;
+}
+
+#iconeHTML,
+#iconeCSS,
+#iconeJS,
+#iconeGit,
+#iconeGitHub {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #9f654f;
+    box-sizing: border-box;
+    padding: 9px;
+    border-radius: 8px;
+    width: 90px;
+}
+
+#iconeCSS {
+    height: 98px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconeJS {
+    padding-bottom: 15px;
+    padding-top: 11px;
+}
+
+
+#iconeGit,
+#iconeGitHub {
+    height: 90px;
+
+}
+
+.projetos {
+    background-color: #9f654f;
+}
+
+.linha1Projetos,
+.linha2Projetos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 20px 0;
+}
+
+.projetoRatingProject,
+.projetoHomePage,
+.projetoCadastroBasico,
+.projetoCompraPlanoDIV,
+.projetoCalculadoraIMC,
+.projetoEcommerce {
+    background-size: cover;
+    width: 270px;
+    height: 260px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.projetoCompraPlanoDIV {
+    background-color: #D5D5D5;
+}
+
+.pProjetoCompraPlano {
+    background-color: grey;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7.4rem 0 0 -3rem;
+    transform: rotate(-43deg);
+    border-radius: 10px;
+    width: 368px;
+    height: 1.5rem;
+
+}
+
+.projetosNome {
+    margin: 0 0 0 200px;
+    box-sizing: border-box;
+    padding: 90px 0px 3px 0px;
+}
+
+.informacoes {
+    background-color: #6c321c;
+    box-sizing: border-box;
+    padding: 30px 0 20px 30px;
+}
+
+.h3Informacoes {
+    margin-top: 0;
+}
+
+.contatoEmail,
+.contatoInstagram {
+    display: block;
+}
+
+@media (min-width:1000px) and (max-width:1200px) {
+
+    header {
+        width: 1000px;
+    }
+}
+
+@media (min-width:1200px) and (max-width: 1300px) {
+
+    header {
+        width: 1200px;
+    }
+}
+
+@media (min-width:1300px) and (max-width: 1500px) {
+
+    header {
+        width: 1300px;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        display: none;
+        width: 800px;
+    }
+
+    .pagInicio {
+        background: #512515;
+        font-size: 10px;
+    }
+
+    .body {
+        width: 800px;
+    }
+
+    .txtSobreMim {
+        width: 400px;
+        padding: 250px 0 300px 20px;
+        font-size: 12px;
+    }
+
+    h1.apresentacao {
+        font-size: 25px;
+    }
+
+    h3.apresentacao {
+        font-size: 15px;
+    }
+
+    .linkedinBotao {
+        width: 100px;
+        height: 20px;
+    }
+
+    .habilidades {
+        display: block;
+        padding: 250px 0 270px 60px;
+    }
+
+    .habilidadeTXT {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .linha1Projetos,
+    .linha2Projetos {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .projetosNome {
+        margin: 0 0 0 120px;
+    }
+
+    @media (max-width: 700px) {
+        header {
+            width: 500px;
+        }
+    }
+}

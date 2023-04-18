@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.span{
+    display: none;
+}
+
+.span2{
+    display: inline-block;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    padding: 20px 0px 25px 0px;
+    z-index: 1;
+    position: fixed;
+    width: 1530px;
+    backdrop-filter: blur(10px);
+}
+
+.sessoes {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-right: 30px;
+    align-items: center;
+    position: sticky;
+    font-size: 18px;
+}
+
+.pagInicio {
+    background: linear-gradient(63.13deg, #8E5D52 51.04%, #512515 51.05%);
+    box-sizing: border-box;
+    padding: 250px 0px 300px 0px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.linkedinBotao {
+    width: 100%;
+    height: 70px;
+    border-radius: 25px;
+    border: none;
+    background-color: #9f654f;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 15px;
+    color: white;
+
+}
+
+#inputMudaIdioma {
+    box-sizing: border-box;
+    margin-left: 20px;
+    cursor: pointer;
+    appearance: none;
+    width: 80px;
+    height: 40px;
+    border-radius: 20%;
+    background-image: url('inputMudaIdioma.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.apresentacao {
+    margin: 0px;
+}
+
+h1.apresentacao {
+    font-size: 50px;
+
+}
+
+h3.apresentacao {
+    font-size: 30px;
+
+}
+
+.sobreMim {
+    display: flex;
+    justify-content: space-around;
+    background-color: #9f654f;
+}
+
+.txtSobreMim {
+    width: 600px;
+    font-size: 19px;
+    box-sizing: border-box;
+    padding: 190px 0px 205px 0px;
+}
+
+.habilidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding: 250px 0px 270px 200px;
+    background-color: #6c321c;
+}
+
+.containerBasicoHabilidade,
+.containerGITHabilidade {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.habilidadeTXT {
+    display: inline-block;
+    width: 300px;
+}
+
+h1.habilidades {
+    margin-bottom: 50px;
+}
+
+.pHTML,
+.pCSS,
+.pJS,
+.pGit,
+.pGitHub {
+    display: none;
+}
+
+#iconeHTML,
+#iconeCSS,
+#iconeJS,
+#iconeGit,
+#iconeGitHub {
+    cursor: pointer;
+    background-color: #9f654f;
+    box-sizing: border-box;
+    padding: 9px;
+    border-radius: 8px;
+    width: 90px;
+    height: 110px;
+}
+
+.projetos {
+    background-color: #9f654f;
+}
+
+.linha1Projetos,
+.linha2Projetos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 20px 0;
+}
+
+.projetoRatingProject,
+.projetoHomePage,
+.projetoCadastroBasico,
+.projetoCompraPlano,
+.projetoCalculadoraIMC,
+.projetoEcommerce {
+    background-size: cover;
+    width: 270px;
+    height: 260px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.projetosNome {
+    margin: 0 0 0 200px;
+    box-sizing: border-box;
+    padding-top: 70px;
+}
+
+.informacoes {
+    background-color: #6c321c;
+    box-sizing: border-box;
+    padding: 30px 0 20px 30px;
+}
+
+.h3Informacoes {
+    margin-top: 0;
+}
+
+.contatoEmail,
+.contatoInstagram {
+    display: block;
+}
+
+@media (max-width: 1200px) and (min-width: 810px) {
+
+    header {
+        width: 900px;
+    }
+}
+
+@media (max-width: 820px) {
+    header {
+        display: none;
+    }
+
+    .pagInicio {
+        background: #512515;
+        font-size: 10px;
+    }
+
+    .body {
+        width: 800px;
+    }
+
+    .txtSobreMim {
+        width: 400px;
+        padding: 250px 0 300px 20px;
+        font-size: 12px;
+    }
+
+    h1.apresentacao {
+        font-size: 25px;
+    }
+
+    h3.apresentacao {
+        font-size: 15px;
+    }
+
+    .linkedinBotao {
+        width: 100px;
+        height: 20px;
+    }
+
+    .habilidades {
+        display: block;
+        padding: 250px 0 270px 60px;
+    }
+
+    .habilidadeTXT {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .linha1Projetos,
+    .linha2Projetos {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .projetosNome {
+        margin: 0 0 0 120px;
+    }
+}
