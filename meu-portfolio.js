@@ -24,7 +24,7 @@ iconeHTML.addEventListener("mouseout", () => {
 
 iconeCSS.addEventListener("mouseover", () => {
     pCSS.style.display = "block"
-    Habilidade.style.display = "none"
+    pHabilidade.style.display = "none"
     h1Habilidade.style.display = "none"
 })
 
@@ -68,10 +68,4 @@ iconeGitHub.addEventListener("mouseout", () => {
     pGitHub.style.display = "none"
     pHabilidade.style.display = "block"
     h1Habilidade.style.display = "block"
-})
-
-inputMudaIdioma.addEventListener('click', () => {
-    const span = document.getElementsByClassName('span');
-
-    span.style.display ='inline-block';
 })
