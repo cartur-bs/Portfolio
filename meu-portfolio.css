@@ -63,18 +63,9 @@ header {
 
 }
 
-#inputMudaIdioma {
-    box-sizing: border-box;
-    margin-left: 20px;
-    cursor: pointer;
-    appearance: none;
-    width: 80px;
-    height: 40px;
-    border-radius: 20%;
-    background-image: url('inputMudaIdioma.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.7;
+.avatarImagem{
+    width: 300px;
+    height: 300px;
 }
 
 a {
@@ -332,6 +323,10 @@ h1.habilidades {
     @media (max-width: 700px) {
         header {
             width: 500px;
+        }
+
+        .pagInicio{
+            display: block;
         }
     }
 }
