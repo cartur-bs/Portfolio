@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -11,8 +11,7 @@ body {
     scroll-behavior: smooth;
 }
 
-.projetoLandingPage{
-
+.projetoLandingPage {
     width: 270px;
     height: 260px;
     cursor: pointer;
@@ -75,7 +74,7 @@ header {
 
 }
 
-.avatarImagem{
+.avatarImagem {
     width: 300px;
     height: 300px;
 }
@@ -106,7 +105,7 @@ h3.apresentacao {
     background-color: #9f654f;
 }
 
-.imgSobreMim{
+.imgSobreMim {
     width: 450px;
     height: 450px;
 }
@@ -121,7 +120,7 @@ h3.apresentacao {
 .habilidades {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     box-sizing: border-box;
     padding: 220px 0px 280px 180px;
     background-color: #6c321c;
@@ -129,7 +128,7 @@ h3.apresentacao {
 
 .containerBasicoHabilidade,
 .containerGITHabilidade {
-    width: 320px;
+    width: 400px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -144,19 +143,18 @@ h1.habilidades {
     margin-bottom: 50px;
 }
 
-.pHTML,
-.pCSS,
-.pJS,
-.pGit,
-.pGitHub {
+.pNone {
     display: none;
 }
 
-#iconeHTML,
-#iconeCSS,
-#iconeJS,
-#iconeGit,
-#iconeGitHub {
+.paraMediaQuery {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin-right: 20px;
+}
+
+.habilidade {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -166,6 +164,7 @@ h1.habilidades {
     padding: 9px;
     border-radius: 8px;
     width: 90px;
+    margin-right: 20px;
 }
 
 #iconeCSS {
@@ -174,9 +173,12 @@ h1.habilidades {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 15px;
+    padding-top: 11px;
 }
 
-#iconeJS {
+#iconeJS,
+#iconeReact {
     padding-bottom: 15px;
     padding-top: 11px;
 }
@@ -251,13 +253,19 @@ h1.habilidades {
     display: block;
 }
 
+.githubFooter {
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
 @media (min-width:1000px) and (max-width:1200px) {
 
     header {
         width: 1000px;
     }
 
-    .sessoes{
+    .sessoes {
         margin: 0 0 0 500px;
     }
 }
@@ -268,8 +276,8 @@ h1.habilidades {
         width: 1200px;
     }
 
-    .sessoes{
-        margin: 0 0 0 600px ;
+    .sessoes {
+        margin: 0 0 0 600px;
     }
 }
 
@@ -279,15 +287,21 @@ h1.habilidades {
         width: 1300px;
     }
 
-    .sessoes{
+    .sessoes {
         margin: 0 0 0 700px;
     }
 }
 
 @media (max-width: 1000px) {
-    header {
+    .sessoes {
         display: none;
-        width: 800px;
+    }
+
+    header {
+        backdrop-filter: none;
+        border: none;
+        position: absolute;
+        width: 360px;
     }
 
     .pagInicio {
@@ -321,7 +335,7 @@ h1.habilidades {
 
     .habilidades {
         display: block;
-        padding: 250px 0 270px 40px;
+        padding: 150px 0 270px 40px;
     }
 
     .habilidadeTXT {
@@ -340,27 +354,44 @@ h1.habilidades {
     }
 
     @media (max-width: 700px) {
-        header {
-            width: 500px;
+
+        .pagInicio {
+            display: block;
+            box-sizing: border-box;
+            padding-left: 18%;
         }
 
-        .pagInicio{
+        .sobreMim {
             display: block;
         }
 
-        .sobreMim{
-            display: block;
-        }
-
-        .imgSobreMim{
+        .imgSobreMim {
             width: 300px;
             height: 300px;
-            margin-bottom: 0px;
+            padding: 20px 0 0 0;
         }
 
-        .txtSobreMim{
+        .txtSobreMim {
             padding-top: 30px;
             width: 300px;
+        }
+
+        .containerBasicoHabilidade,
+        .containerGITHabilidade {
+            display: inline-block;
+            width: 300px;
+        }
+
+        #iconeAPI {
+            display: inline-block;
+            margin-left: 5%;
+        }
+
+        .paraMediaQuery {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin: 15px;
         }
     }
 }

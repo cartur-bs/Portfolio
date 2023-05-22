@@ -15,12 +15,14 @@
   <script src="./meu-portfolio.js" defer></script>
 
   <header>
+ 
     <div class="sessoes">
       <a href="#pagInicio">Início</a>
       <a href="#sobreMim">Sobre mim</a>
       <a href="#habilidades">Habilidades</a>
       <a href="#projetos">Projetos</a>
     </div>
+
   </header>
 
   <main>
@@ -45,13 +47,13 @@
 
       <div class="txtSobreMim">
         <h1>Quem sou eu?</h1>
-        <p>Meu nome é Carlos Artur e sou um apaixonado por tecnologia
-          com sede de conhecimento que viu na programação uma
-          maneira de seguir esse caminho de aprendizagem constante. Ainda sem
-          experiência efetiva no mercado como desenvolvedor front-end, mas com habilidades
-          suficientes para atuar como tal. <br> <br>
+        <p>Você procura um desenvolvedor junior com sede de conhecimento e
+          potencial para crescer no mercado? Meu nome é Carlos Artur e sou um apaixonado
+          por tecnologia que viu na programação uma maneira de seguir esse
+          caminho de aprendizagem constante. <br> <br>
           Possuo conhecimento sólido de tecnologias como HTML, CSS, JavaScript e
-          básicos de ReactJS e Bootstrap.
+          crescentes de ReactJS, Bootstrap.Veja mais e entenda como posso ser o integrante
+          ideal para compor seu time.
 
         </p>
       </div>
@@ -61,27 +63,39 @@
 
       <div>
         <div class="containerBasicoHabilidade">
-          <div class="habilidadeHTML">
-            <img src="./htmlIcon.png" alt="ícone HTML" id="iconeHTML">
+          <div class="paraMediaQuery">
+            <div class="habilidadeHTML">
+              <img src="./htmlIcon.png" alt="ícone HTML" id="iconeHTML" class="habilidade">
+            </div>
+
+            <div class="habilidadeCSS">
+              <img src="./css.png" alt="ícone CSS" id="iconeCSS" class="habilidade">
+            </div>
           </div>
 
-          <div class="habilidadeCSS">
-            <img src="./css.png" alt="ícone CSS" id="iconeCSS">
+          <div class="paraMediaQuery">
+            <div class="habilidadeJS">
+              <img src="./js.png" alt="ícone JS" id="iconeJS" class="habilidade">
+            </div>
+            <div class="habilidadeJS">
+              <img src="./react..png" alt="ícone JS" id="iconeReact" class="habilidade">
+            </div>
           </div>
 
-          <div class="habilidadeJS">
-            <img src="./js.png" alt="ícone JS" id="iconeJS">
-          </div>
         </div>
 
         <div class="containerGITHabilidade">
+          <div class="paraMediaQuery">
+            <div class="habilidadeGIT">
+              <img src="./git.png" alt="ícone GIT" id="iconeGit" class="habilidade">
+            </div>
 
-          <div class="habilidadeGIT">
-            <img src="./git.png" alt="ícone GIT" id="iconeGit">
+            <div class="habilidadeGITHUB">
+              <img src="./github.png" alt="ícone Github" id="iconeGitHub" class="habilidade">
+            </div>
           </div>
-
           <div class="habilidadeGITHUB">
-            <img src="./github.png" alt="ícone Github" id="iconeGitHub">
+            <img src="./api.png" alt="ícone Github" id="iconeAPI" class="habilidade">
           </div>
         </div>
 
@@ -93,22 +107,30 @@
         <p id="pHabilidade">/Vamos conhecer melhor minhas habilidades? Passe o mouse pelos ícones./ </p>
 
         <div>
-          <p class="pHTML" id="pHTML">HTML é uma linguagem de marcação de hipertexto utilizada
+          <p class="pNone" id="pHTML">HTML é uma linguagem de marcação de hipertexto utilizada
             na construção de páginas web.
           </p>
 
-          <p class="pCSS" id="pCSS">CSS permite a implementação de estilos diversos à página web. </p>
+          <p class="pNone" id="pCSS">CSS permite a implementação de estilos diversos à página web. </p>
 
-          <p class="pJS" id="pJS">JavaScript é uma linguagem de programação de auto-nível que permite
+          <p class="pNone" id="pJS">JavaScript é uma linguagem de programação de auto-nível que permite
             a adição da funcionalidade aos elementos da página web.
           </p>
 
-          <p class="pGit" id="pGit">GIT é um sistema de controle de versões distribuído usado no
+          <p class="pNone" id="pReact">O React JS é uma biblioteca JavaScript de código aberto
+            utilizada para construir interfaces para aplicações de página única(SPA's).
+          </p>
+
+          <p class="pNone" id="pGit">GIT é um sistema de controle de versões distribuído usado no
             desenvolvimento de software.
           </p>
 
-          <p class="pGitHub" id="pGitHub">Github é uma plataforma que permite o armazenamento em nuvem
+          <p class="pNone" id="pGitHub">Github é uma plataforma que permite o armazenamento em nuvem
             dos códigos fonte de uma aplicação.
+          </p>
+
+          <p class="pNone" id="pAPI">APIs são mecanismos que permitem que dois componentes
+            de software se comuniquem usando um conjunto de definições e protocolos.
           </p>
         </div>
       </div>
@@ -165,6 +187,8 @@
       <h3 class="h3Informacoes">Me encontre em:</h3>
       <a class="contatoEmail" href="mailto:cartur758@gmail.com" target="_blank">cartur758@gmail.com</a>
       <a class="contatoInstagram" href="https://www.instagram.com/arturr.bs/" target="_blank">@arturr.bs</a>
+      <a class="contatoInstagram" href="https://github.com/cartur-bs" target="_blank">
+        <img src="./github.png" alt="icone github" class="githubFooter"></a>
     </div>
 
   </main>
