@@ -11,7 +11,7 @@ body {
     scroll-behavior: smooth;
 }
 
-.projetoLandingPage {
+.projetoGithubFinder {
     width: 270px;
     height: 260px;
     cursor: pointer;
@@ -198,7 +198,11 @@ h1.habilidades {
 .linha2Projetos {
     display: flex;
     justify-content: space-evenly;
-    padding: 30px 0 20px 0;
+    padding: 20px 0 20px 0;
+}
+
+.projetos span {
+    margin-left: 200px;
 }
 
 .projetoRatingProject,
