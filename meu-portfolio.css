@@ -194,28 +194,59 @@ h1.habilidades {
     background-color: #9f654f;
 }
 
+.projetos h1
+{
+    display: inline-block;
+}
+
+.projetos h3{
+    display: inline-block;
+    margin-left: 10px;
+    text-decoration: underline;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#jsSessao{
+    margin-left: 200px;
+}
+
+.projetos span{
+    margin-left: 1rem;
+    font-size: 12px;
+}
+
 .linha1Projetos,
 .linha2Projetos {
     display: flex;
     justify-content: space-evenly;
     padding: 20px 0 20px 0;
+
 }
 
 .projetos span {
     margin-left: 200px;
 }
 
-.projetoRatingProject,
-.projetoHomePage,
-.projetoCadastroBasico,
-.projetoCompraPlanoDIV,
-.projetoCalculadoraIMC,
-.projetoEcommerce {
-    background-size: cover;
+.reactSessaoDivAberta{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 150px 0;
+}
+
+.sessaoFechada{
+    opacity: 0.5;
+}
+
+.projeto {
     width: 270px;
     height: 260px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+.sessaoNone{
+    display: none;
 }
 
 .projetoCompraPlanoDIV {
@@ -239,7 +270,7 @@ h1.habilidades {
 .projetosNome {
     margin: 0 0 0 200px;
     box-sizing: border-box;
-    padding: 90px 0px 3px 0px;
+    padding: 70px 0px 3px 0px;
 }
 
 .informacoes {
@@ -348,9 +379,23 @@ h1.habilidades {
     }
 
     .linha1Projetos,
-    .linha2Projetos {
+    .linha2Projetos{
+        display: inline-block;
+        margin-left: 20%;
+    }
+
+    .reactSessaoDivAberta{
         display: block;
-        margin-left: 50px;
+        padding-left: 20%;
+    }
+
+    .projetos span{
+        display: block;
+        margin-left: 30%;
+    }
+
+    #jsSessao{
+        margin-left: 20%;
     }
 
     .projetosNome {

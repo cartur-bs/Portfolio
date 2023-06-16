@@ -12,7 +12,8 @@ const pReact = document.getElementById("pReact");
 const pCSS = document.getElementById("pCSS");
 const pJS = document.getElementById("pJS");
 const pAPI = document.getElementById("pAPI");
-const inputMudaIdioma = document.getElementById('inputMudaIdioma');
+const jsSessao = document.getElementById('jsSessao');
+const reactjsSessao = document.getElementById('reactjsSessao');
 
 iconeHTML.addEventListener("mouseover", () => {
     pHTML.style.display = "inline"
@@ -96,4 +97,23 @@ iconeAPI.addEventListener("mouseout", () => {
     pAPI.style.display = "none"
     pHabilidade.style.display = "block"
     h1Habilidade.style.display = "block"
+})
+
+jsSessao.addEventListener('click', () => {
+    document.getElementById('jsSessaoDiv').classList.remove('sessaoNone');
+    document.getElementById('reactSessaoDiv').classList.add('sessaoNone');
+
+    jsSessao.classList.remove('sessaoFechada');
+    reactjsSessao.classList.add('sessaoFechada');
+})
+
+reactjsSessao.addEventListener('click', () => {
+    const reactSessaoDiv = document.getElementById('reactSessaoDiv');
+
+    document.getElementById('jsSessaoDiv').classList.add('sessaoNone');
+    reactSessaoDiv.classList.remove('sessaoNone');
+    reactSessaoDiv.classList.add('reactSessaoDivAberta');
+
+    jsSessao.classList.add('sessaoFechada');
+    reactjsSessao.classList.remove('sessaoFechada');
 })
