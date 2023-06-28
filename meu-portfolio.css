@@ -11,13 +11,6 @@ body {
     scroll-behavior: smooth;
 }
 
-.projetoGithubFinder {
-    width: 270px;
-    height: 260px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
 .span {
     display: none;
 }
@@ -137,6 +130,7 @@ h3.apresentacao {
 .habilidadeTXT {
     display: inline-block;
     width: 300px;
+    margin-right: 50px;
 }
 
 h1.habilidades {
@@ -194,12 +188,11 @@ h1.habilidades {
     background-color: #9f654f;
 }
 
-.projetos h1
-{
+.projetos h1 {
     display: inline-block;
 }
 
-.projetos h3{
+.projetos h3 {
     display: inline-block;
     margin-left: 10px;
     text-decoration: underline;
@@ -207,11 +200,11 @@ h1.habilidades {
     cursor: pointer;
 }
 
-#jsSessao{
+#jsSessao {
     margin-left: 200px;
 }
 
-.projetos span{
+.projetos span {
     margin-left: 1rem;
     font-size: 12px;
 }
@@ -228,13 +221,13 @@ h1.habilidades {
     margin-left: 200px;
 }
 
-.reactSessaoDivAberta{
+.reactSessaoDivAberta {
     display: flex;
     justify-content: space-evenly;
     padding: 150px 0;
 }
 
-.sessaoFechada{
+.sessaoFechada {
     opacity: 0.5;
 }
 
@@ -245,7 +238,7 @@ h1.habilidades {
     border-radius: 10px;
 }
 
-.sessaoNone{
+.sessaoNone {
     display: none;
 }
 
@@ -379,68 +372,116 @@ h1.habilidades {
     }
 
     .linha1Projetos,
-    .linha2Projetos{
+    .linha2Projetos {
         display: inline-block;
         margin-left: 20%;
     }
 
-    .reactSessaoDivAberta{
+    .reactSessaoDivAberta {
         display: block;
         padding-left: 20%;
     }
 
-    .projetos span{
+    .projetos span {
         display: block;
         margin-left: 30%;
     }
 
-    #jsSessao{
+    #jsSessao {
         margin-left: 20%;
     }
 
     .projetosNome {
         margin: 0 0 0 120px;
     }
+}
 
-    @media (max-width: 700px) {
+@media (max-width: 700px) {
+    body {
+        margin-right: -30px;
+    }
 
-        .pagInicio {
-            display: block;
-            box-sizing: border-box;
-            padding-left: 18%;
-        }
+    .pagInicio {
+        display: block;
+        box-sizing: border-box;
+        padding-left: 18%;
+    }
 
-        .sobreMim {
-            display: block;
-        }
+    .sobreMim {
+        display: block;
+    }
 
-        .imgSobreMim {
-            width: 300px;
-            height: 300px;
-            padding: 20px 0 0 0;
-        }
+    .imgSobreMim {
+        width: 300px;
+        height: 300px;
+        padding: 20px 0 0 0;
+    }
 
-        .txtSobreMim {
-            padding-top: 30px;
-            width: 300px;
-        }
+    .txtSobreMim {
+        padding-top: 30px;
+        width: 300px;
+    }
 
-        .containerBasicoHabilidade,
-        .containerGITHabilidade {
-            display: inline-block;
-            width: 300px;
-        }
+    .containerBasicoHabilidade,
+    .containerGITHabilidade {
+        display: inline-block;
+        width: 300px;
+    }
 
-        #iconeAPI {
-            display: inline-block;
-            margin-left: 5%;
-        }
+    #iconeAPI {
+        display: inline-block;
+        margin-left: 5%;
+    }
 
-        .paraMediaQuery {
-            display: flex;
-            justify-content: space-between;
-            width: 300px;
-            margin: 15px;
-        }
+    .paraMediaQuery {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin: 15px;
+    }
+}
+
+@media(max-width:400px) {
+    body {
+        margin-right: -30px;
+    }
+
+    .pagInicio {
+        display: block;
+        box-sizing: border-box;
+        padding-left: 18%;
+    }
+
+    .sobreMim {
+        display: block;
+    }
+
+    .imgSobreMim {
+        width: 300px;
+        height: 300px;
+        padding: 20px 0 0 0;
+    }
+
+    .txtSobreMim {
+        padding-top: 30px;
+        width: 300px;
+    }
+
+    .containerBasicoHabilidade,
+    .containerGITHabilidade {
+        display: inline-block;
+        width: 300px;
+    }
+
+    #iconeAPI {
+        display: inline-block;
+        margin-left: 5%;
+    }
+
+    .paraMediaQuery {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin: 15px;
     }
 }
