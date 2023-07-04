@@ -67,9 +67,22 @@ header {
 
 }
 
+@keyframes desenhoAnimacao {
+    from {
+        top:-15px;
+    }
+    to {
+        top: 25px;
+    }
+}
+
+
+
 .avatarImagem {
     width: 300px;
     height: 300px;
+    position:relative;
+    animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
 }
 
 a {
@@ -83,13 +96,13 @@ a {
 
 h1.apresentacao {
     font-size: 50px;
-
 }
 
 h3.apresentacao {
     font-size: 30px;
 
 }
+
 
 .sobreMim {
     display: flex;
@@ -101,6 +114,12 @@ h3.apresentacao {
 .imgSobreMim {
     width: 450px;
     height: 450px;
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+.imgSobreMim:hover {
+    transform: scale(1.05);
 }
 
 .txtSobreMim {
