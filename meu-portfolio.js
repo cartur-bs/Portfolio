@@ -117,3 +117,4 @@ reactjsSessao.addEventListener('click', () => {
     jsSessao.classList.add('sessaoFechada');
     reactjsSessao.classList.remove('sessaoFechada');
 })
+
